@@ -31,7 +31,15 @@ const UpadateEmployee = () => {
     featchData();
   }, []);
 
-  const updateEmployee = (e, id) => {};
+  const updateEmployee = (e) => {
+    EmployeeService.updateEmployee(employee, id)
+      .then((response) => {
+        navigate("/employeeList");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
 
   return (
     <div className="flex max-w-2xl mx-auto shadow border-b">
