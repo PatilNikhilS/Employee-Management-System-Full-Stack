@@ -4,6 +4,7 @@ import Addemployee from "@/components/addemployee";
 import Login from "../components/Login";
 import Navbar from "../components/Navbar";
 import Employeelist from "../components/Employeelist";
+import Footer from "@/components/Footer";
 
 export default function Home({ session }) {
   if (!session) return <Login />;
@@ -17,6 +18,8 @@ export default function Home({ session }) {
       <main>
         <Addemployee />
       </main>
+
+      <Footer />
     </div>
   );
 }
