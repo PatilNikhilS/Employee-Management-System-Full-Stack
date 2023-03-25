@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import AddEmployee from "./conponents/AddEmployee";
 import EmployeeList from "./conponents/EmployeeList";
+import Footer from "./conponents/Footer";
 import Navbar from "./conponents/Navbar";
 import UpadateEmployee from "./conponents/UpadateEmployee";
 
@@ -17,6 +18,7 @@ function App() {
           <Route path="/addEmployee" element={<AddEmployee />} />
           <Route path="/editEmployee/:id" element={<UpadateEmployee />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   );
